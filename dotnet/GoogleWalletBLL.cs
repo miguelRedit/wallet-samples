@@ -267,7 +267,7 @@ namespace GoogleWallet.BLL
                                 Value = "Benfica"
                             }
                         },
-                    },
+                    },//Nicholas Alteen // here i define textmodeledata
                     TextModulesData = new List<TextModuleData>
                     {
                         new TextModuleData
@@ -329,7 +329,7 @@ namespace GoogleWallet.BLL
                 GenericClass newClass = new GenericClass
                 {
                     Id = $"{issuerId}.{classSuffix}",
-                    ClassTemplateInfo = new ClassTemplateInfo
+                    ClassTemplateInfo = new ClassTemplateInfo  //Nicholas Alteen // here i define template to use on texmouledata
                     {
                         CardTemplateOverride = new CardTemplateOverride
                         {
@@ -347,7 +347,7 @@ namespace GoogleWallet.BLL
                                                 {
                                                     new FieldReference
                                                     {
-                                                        FieldPath = "object.payload.genericObjects[0].textModulesData[0].id"
+                                                        FieldPath = "object.payload.genericObjects[0].textModulesData[0].id" //here is my doubts of how i should reference
 
                                                     }
                                                 }
